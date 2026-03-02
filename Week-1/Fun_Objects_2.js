@@ -1,3 +1,4 @@
+//Modifying objects 
 const employees = [
   {
     eno: 101,
@@ -6,7 +7,7 @@ const employees = [
   },
   {
     eno: 102,
-    name: "Bhanu",
+    name: "Bhanu",                   //Given data
     marks: [65, 70, 68],
   },
   {
@@ -26,19 +27,25 @@ const employees = [
   },
 ];
 
-//Insert an employee at 2nd position
+// 1.Insert an employee at 2nd position
+
 console.log("Inserted a new employee at 2nd position")
+//array_name.splice(index,no.of elements to delete,new element to add)
 employees.splice(1,0,{eno:100,name:"Ram",marks:[89,93,88]})
+//At index 1, delete 0 elements and add the object
 console.log(employees)
 
-//Remove an employee with name kiran
+// 2.Remove an employee with name kiran
+
 console.log("Removed the employee Kiran")
-employees.splice(4,1)
+employees.splice(4,1)  //At index 4, delete 1 element i.e; deleting Kiran
 console.log(employees)
 
-//Change the mark of Sneha
+// 3.Change the mark of Sneha
+
 console.log("Updated the marks of Sneha")
-employees[3].marks.splice(2,1,75) 
+employees[3].marks.splice(2,1,75)  /*In 3rd element of employees i.e; Sneha,in the key marks the value 
+updated to 75*/
 console.log(employees)
 
 
