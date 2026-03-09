@@ -1,0 +1,122 @@
+### GET ALL USERS
+GET http://localhost:3000/user-api/users
+
+### GET DETAILS OF USER BY ID
+GET http://localhost:3000/user-api/users/3
+
+### CREATE NEW USER
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"Keerthi",
+    "age":22
+}
+
+### CREATE NEW USER
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":2,
+    "name":"Jyoshna",
+    "age":21
+}
+
+### CREATE NEW USER 
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":3,
+    "name":"Krishna",
+    "age":24
+}
+###
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":4,
+    "name":"Sudha",
+    "age":30
+}
+
+
+### UPDATE USER BY ID
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"Revathi",
+    "age":18
+}
+
+### DELETE USER BY ID 
+DELETE http://localhost:3000/user-api/users/4
+
+
+
+###
+GET http://localhost:3000/product-api/products
+
+###
+GET http://localhost:3000/product-api/products/Samsung
+
+### 
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id" : 101,
+    "name" : "Laptop",
+    "brand" : "Samsung",
+    "price" : 75000
+} 
+### 
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id" : 102,
+    "name" : "Mobile Phone",
+    "brand" : "Realme",
+    "price" : 20000
+} 
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id" : 103,
+    "name" : "Headphones",
+    "brand" : "Boat",
+    "price" : 15000
+} 
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id" : 104,
+    "name" : "Smart Watch",
+    "brand" : "Fire-Bolt",
+    "price" : 2000
+} 
+
+###
+PUT http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id" : 102,
+    "name" : "Mobile Phone",
+    "brand" : "Oneplus",
+    "price" : 25000
+}
+
+###
+DELETE http://localhost:3000/product-api/products/104
+
